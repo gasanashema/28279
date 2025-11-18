@@ -300,6 +300,8 @@ public final class PayrollRecord extends Salary {
                     taxDeduction, loanDeduction,
                     basicSalary, grossSalary, netSalary);
 
+            System.out.println("\n ------------- ------------- ------------\n");
+            System.out.println("Student ID: 28279");
             System.out.println("\n===================================");
             System.out.println("        PAYROLL RECORD");
             System.out.println("===================================");

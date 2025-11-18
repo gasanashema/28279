@@ -318,6 +318,8 @@ public final class StudentRecord extends Fee {
                     obtainedMarks, remarks,
                     tuitionFee, examFee);
 
+            System.out.println("\n ------------- ------------- ------------\n");
+            System.out.println("Student ID: 28279");
             System.out.println("\n===================================");
             System.out.println("          STUDENT RECORD");
             System.out.println("===================================");
