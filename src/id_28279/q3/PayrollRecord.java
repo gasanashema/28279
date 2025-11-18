@@ -42,7 +42,6 @@ public final class PayrollRecord extends Salary {
 
         System.out.println("========= EMPLOYEE PAYROLL SYSTEM =========");
 
-        // Entity info
         while (true) {
             try {
                 System.out.print("Enter ID (>0): ");
@@ -77,7 +76,6 @@ public final class PayrollRecord extends Salary {
             }
         }
 
-        // Company info
         while (true) {
             System.out.print("Company name: ");
             companyName = sc.nextLine().trim();
@@ -105,7 +103,6 @@ public final class PayrollRecord extends Salary {
             System.out.println("ERROR: Invalid email format");
         }
 
-        // Department info
         while (true) {
             System.out.print("Department name: ");
             departmentName = sc.nextLine().trim();
@@ -122,7 +119,6 @@ public final class PayrollRecord extends Salary {
             System.out.println("ERROR: Must be >=3 alphanumeric characters");
         }
 
-        // Manager info
         while (true) {
             System.out.print("Manager name: ");
             managerName = sc.nextLine().trim();
@@ -147,7 +143,6 @@ public final class PayrollRecord extends Salary {
             System.out.println("ERROR: Must be 10 digits and different from company phone");
         }
 
-        // Employee info
         while (true) {
             System.out.print("Employee name: ");
             employeeName = sc.nextLine().trim();
@@ -185,7 +180,6 @@ public final class PayrollRecord extends Salary {
             System.out.println("ERROR: Must be 10 digits and unique");
         }
 
-        // Attendance
         while (true) {
             try {
                 System.out.print("Total days (>0): ");
@@ -222,7 +216,6 @@ public final class PayrollRecord extends Salary {
             }
         }
 
-        // Allowances
         while (true) {
             try {
                 System.out.print("Housing allowance (>=0): ");
@@ -247,7 +240,6 @@ public final class PayrollRecord extends Salary {
             }
         }
 
-        // Deductions
         while (true) {
             try {
                 System.out.print("Tax deduction (>=0): ");
@@ -272,7 +264,6 @@ public final class PayrollRecord extends Salary {
             }
         }
 
-        // Salary
         while (true) {
             try {
                 System.out.print("Basic salary (>0): ");
@@ -285,7 +276,6 @@ public final class PayrollRecord extends Salary {
             }
         }
 
-        // Calculate gross and net salary
         grossSalary = basicSalary + housingAllowance + transportAllowance;
         netSalary = grossSalary - (taxDeduction + loanDeduction);
 

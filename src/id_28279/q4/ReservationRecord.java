@@ -44,7 +44,6 @@ public final class ReservationRecord extends Feedback {
 
         System.out.println("========= HOTEL RESERVATION SYSTEM =========");
 
-        // ===== Entity Information =====
         while (true) {
             try {
                 System.out.print("Enter ID: ");
@@ -79,7 +78,6 @@ public final class ReservationRecord extends Feedback {
             }
         }
 
-        // ===== Hotel Information =====
         while (true) {
             System.out.print("Hotel name: ");
             hotelName = sc.nextLine().trim();
@@ -107,7 +105,6 @@ public final class ReservationRecord extends Feedback {
             System.out.println("ERROR: Invalid email format");
         }
 
-        // ===== Room Information =====
         while (true) {
             try {
                 System.out.print("Room number: ");
@@ -140,7 +137,6 @@ public final class ReservationRecord extends Feedback {
             }
         }
 
-        // ===== Customer Information =====
         while (true) {
             System.out.print("Customer name: ");
             customerName = sc.nextLine().trim();
@@ -166,7 +162,6 @@ public final class ReservationRecord extends Feedback {
             System.out.println("ERROR: Must be 10 digits and different from hotel phone");
         }
 
-        // ===== Booking Information =====
         while (true) {
             try {
                 System.out.print("Booking date (YYYY-MM-DD): ");
@@ -202,7 +197,6 @@ public final class ReservationRecord extends Feedback {
             }
         }
 
-        // ===== Service Information =====
         while (true) {
             System.out.print("Service name: ");
             serviceName = sc.nextLine().trim();
@@ -223,7 +217,6 @@ public final class ReservationRecord extends Feedback {
             }
         }
 
-        // ===== Payment Information =====
         while (true) {
             System.out.print("Payment method: ");
             paymentMethod = sc.nextLine().trim();
@@ -244,7 +237,6 @@ public final class ReservationRecord extends Feedback {
             }
         }
 
-        // ===== Bill Information =====
         while (true) {
             try {
                 System.out.print("Room charge: ");
@@ -269,10 +261,8 @@ public final class ReservationRecord extends Feedback {
             }
         }
 
-        // Auto-calculate total bill
         totalBill = roomCharge + serviceCharge;
 
-        // ===== Feedback Information =====
         while (true) {
             try {
                 System.out.print("Rating (1-5): ");
@@ -293,7 +283,6 @@ public final class ReservationRecord extends Feedback {
             System.out.println("ERROR: Comments cannot be empty");
         }
 
-        // ===== Create ReservationRecord =====
         try {
             ReservationRecord record = new ReservationRecord(
                     id, createdDate, updatedDate,
