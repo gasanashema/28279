@@ -202,6 +202,8 @@ public final class OrderRecord extends Invoice {
 
             OrderRecord record = new OrderRecord(store, category, product, customer, order, payment, shipping);
 
+            System.out.println("\n ------------- ------------- ------------\n");
+            System.out.println("Student ID: 28279");
             System.out.println("\n========= ONLINE SHOPPING RECORD =========");
             System.out.println("Store: " + record.store.getStoreName() + " | Email: " + record.store.getEmail());
             System.out.println("Address: " + record.store.getAddress());

@@ -193,6 +193,8 @@ public final class AccountRecord extends Loan {
                     loanAmount, interestRate, duration
             );
 
+            System.out.println("\n ------------- ------------- ------------\n");
+            System.out.println("Student ID: 28279");
             System.out.println("\n========= BANKING RECORD =========");
             System.out.println("Bank: " + bankName + " | Branch: " + branchCode + " | Address: " + address + " | Phone: " + bankPhone);
             System.out.println("Account: " + accountNumber + " | Type: " + accountType + " | Balance: " + balance);

@@ -199,6 +199,8 @@ public final class TicketRecord extends Invoice {
                     paymentDate, paymentMode
             );
 
+            System.out.println("\n ------------- ------------- ------------\n");
+            System.out.println("Student ID: 28279");
             System.out.println("\n========= TICKET RECORD =========");
             System.out.println("Airline: " + record.getAirlineName());
             System.out.println("Address: " + record.getAddress());
